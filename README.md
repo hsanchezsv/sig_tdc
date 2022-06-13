@@ -1,64 +1,58 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<h1 align="center" style="font-weight: bold;">Lara<span style="color: #3B82F6 !important;">Dash</span></h1>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## ¿Qué es LaraDash?
 
-## About Laravel
+Lara<span style="color: #3B82F6;">Dash</span> es un sistema administrativo construido bajo el framework Laravel, nació para ser la partida de cualquier proyecto que tengan en mente. Con grandes herramientas que se necesita en todo proyecto.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Stack LaraDash
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Lara<span style="color: #3B82F6;">Dash</span> utliza las tecnologías recomendadas por el propio **[Taylor Otwell](https://twitter.com/taylorotwell)**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Tecnologías:
 
-## Learning Laravel
+- **[Laravel 8](https://laravel.com/)**
+- **[Jetstream 2](https://jetstream.laravel.com/)**
+- **[Inertia js](https://inertiajs.com/)**
+- **[Vue js 3.2](https://v3.vuejs.org/)**
+- **[Tailwind Css 2](https://tailwindcss.com/)**
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ¿En qué me puede ayudar LaraDash?
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Lara<span style="color: #3B82F6;">Dash</span> no solo es una plantilla UI construido con las tecnologías mencionadas. Además te ofrece los superpoderes que todo proyecto mediano o grande tiene que tener por obligación:
 
-## Laravel Sponsors
+- Modo claro y oscuro
+- Iniciar sesión mediante usuario o correo.
+- Mensajes Flash
+- Validación de formularios
+- CRUD con Inertia.js
+- CRUD con Vue.js 3.2
+- CRUD con Vue.js 3.2 refactorizado
+- Sistema de Roles y Permisos
+- Filtros de búsqueda y paginación *(pendiente)*
+- Importación y Exportación de archivos Excel *(pendiente)*
+- Generación de reportes en PDF *(pendiente)*
+- Gráficos estadísticos *(pendiente)*
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Instalación
 
-### Premium Partners
+Solo debes de clonar el proyecto Lara<span style="color: #3B82F6;">Dash</span> o utilizar los componentes que necesitas.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+> git clone https://github.com/GenaroHV/LaraDash.git
 
-## Contributing
+## Créditos
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Lara<span style="color: #3B82F6;">Dash</span> no hubiera sido posible sin la necesidad de tener un proyecto base en el cual empezar a construir cada imaginación. Para el UI me base en el [Dashboard and admin templates](https://www.tailwind-kit.com/templates/dashboard). Para la los roles y permisos del backend en [Laravel Permission](https://spatie.be/docs/laravel-permission/v5/introduction) y en el fronted en [Vue Gates](https://williamcruzme.github.io/vue-gates/#/).
 
-## Code of Conduct
+## [Genaro Hernández](https://genarohernandez.pro/)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Soy un programador con conociemientos en backend y frontend, feliz de utilizar <span style="color: #E64B4B;font-weight: bold;">Laravel</span> & <span style="color: #4BE65B;font-weight: bold;">Vuejs</span> en cada nuevo proyecto. Escribo sobre programación web, aplicaciones móviles y software de escritorio en [mi blog](https://genarohernandez.pro/blog). Si tienes alguna duda sobre como utilizar **Lara<span style="color: #3B82F6;">Dash</span>** no olvides en escribirme.
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Licencia
 
-## License
+Lara<span style="color: #3B82F6;">Dash</span> es un proyecto open source desarrollado por Genaro Hernández con licencia [MIT](https://opensource.org/licenses/MIT). Utilizalo a tu gusto.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Apoya el proyecto
+Hola devs 👋, gracias por considerar hacer una donación, para poder seguir trabajando en contribuir en futuras actualizaciones del proyecto.
+
+<a href="https://www.buymeacoffee.com/genarohernandez" taget="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Invítame un café&emoji=&slug=genarohernandez&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"></a>
