@@ -126,9 +126,9 @@ APP_NAME=SIG_TDC
 APP_URL=http://localhost:9252
 
 DB_HOST=sig_tdc_db
-DB_DATABASE=laradash
-DB_USERNAME=root
-DB_PASSWORD=laradash_root
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
 ```
 
 ## Instalación (Docker)
@@ -181,7 +181,6 @@ php artisan key:generate
 
 - Contraseñas: hashing bcrypt
 - CSRF: tokens en todos los formularios (Blade/Inertia)
-- Sesiones: driver file, expiración 120 minutos
 - Roles y permisos: Spatie Permission + Gates + Policies
 - 2FA disponible para todos los usuarios
 - API tokens via Laravel Sanctum
