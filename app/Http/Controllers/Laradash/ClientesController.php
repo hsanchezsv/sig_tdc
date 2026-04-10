@@ -3,25 +3,47 @@
 namespace App\Http\Controllers\Laradash;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ClienteRequest;
+use App\Models\Cliente;
+use App\Models\Pais;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
-use Illuminate\Support\Facades\DB;
 
 class ClientesController extends Controller
 {
-    public function index(){
-        $clientes = DB::select('SELECT 
-                                    cl.id_cliente,
-                                    cl.nombre_cliente,
-                                    p.nombre pais,
-                                    cl.nit,
-                                    cl.direccion,
-                                    cl.contacto_nombre,
-                                    cl.telefono,
-                                    cl.fecha_ingreso
-                                FROM
-                                    sig_clientes cl
-                                    INNER JOIN sig_paises p ON cl.id_pais = p.id_pais');
-        return Inertia::render('Otros/Clientes', compact('clientes'));
+    public function index(Request $request)
+    {
+        $key = $request->buscar;
+        $clientes = Cliente::with('pais')
+            ->when($key, fn($q) => $q->filtro($key))
+            ->orderBy('id_cliente')
+            ->paginate(10)
+            ->appends(['buscar' => $key]);
+
+        $paises = Pais::orderBy('nombre')->get(['id_pais', 'nombre']);
+
+        return Inertia::render('Otros/Clientes', [
+            'clientes' => $clientes,
+            'paises'   => $paises,
+            'filtro'   => $key,
+        ]);
+    }
+
+    public function store(ClienteRequest $request)
+    {
+        Cliente::create($request->validated());
+        return redirect()->back()->with('success', 'Cliente creado con éxito');
+    }
+
+    public function update(ClienteRequest $request, $cliente)
+    {
+        Cliente::findOrFail($cliente)->update($request->validated());
+        return redirect()->back()->with('success', 'Cliente actualizado con éxito');
+    }
+
+    public function destroy($cliente)
+    {
+        Cliente::findOrFail($cliente)->delete();
+        return redirect()->back()->with('success', 'Cliente eliminado con éxito');
     }
 }

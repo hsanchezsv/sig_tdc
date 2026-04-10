@@ -29,5 +29,25 @@ Route::get('demo', function() {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+    $totalVentas     = \Illuminate\Support\Facades\DB::table('sig_ventas')
+                        ->whereYear('fecha_compra', now()->year)
+                        ->sum('monto_facturado');
+    $totalVentasAnterior = \Illuminate\Support\Facades\DB::table('sig_ventas')
+                        ->whereYear('fecha_compra', now()->subYear()->year)
+                        ->sum('monto_facturado');
+    $totalClientes   = \App\Models\Cliente::count();
+    $totalVendedores = \App\Models\Vendedor::count();
+    $totalProductos  = \App\Models\Producto::count();
+    $totalSucursales = \App\Models\Sucursal::count();
+    $totalProveedores= \App\Models\Proveedor::count();
+
+    return Inertia::render('Dashboard', compact(
+        'totalVentas',
+        'totalVentasAnterior',
+        'totalClientes',
+        'totalVendedores',
+        'totalProductos',
+        'totalSucursales',
+        'totalProveedores'
+    ));
 })->name('dashboard');

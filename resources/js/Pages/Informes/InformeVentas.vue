@@ -226,7 +226,7 @@
         
 </script>
 
-<script type="module">
+<script>
   import { ref, toRefs } from 'vue'
   import { Inertia } from '@inertiajs/inertia'
   import html2pdf from 'html2pdf.js'

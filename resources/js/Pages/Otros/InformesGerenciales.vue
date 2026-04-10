@@ -68,7 +68,7 @@
     const sucursales = props.sucursales
         
 </script>
-<script type="module">
+<script>
   import { ref, toRefs } from 'vue'
   import { Inertia } from '@inertiajs/inertia'
 

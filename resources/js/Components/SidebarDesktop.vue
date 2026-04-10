@@ -72,6 +72,16 @@
                 </span>
             </Link>
 
+            <Link :href="route('ventas.index')" class="w-full justify-start"
+                :class="$page.url.startsWith('/ventas') ? 'linkClassActive' : 'linkClass'">
+                <span class="text-left">
+                    <IconItem/>
+                </span>
+                <span class="mx-4 text-xs font-normal">
+                    Ventas / Facturas
+                </span>
+            </Link>
+
             <Link :href="route('informes.index')" class="w-full justify-start"
                 :class="$page.url === '/informes' ? 'linkClassActive' : 'linkClass'">
                 <span class="text-left">
@@ -140,6 +150,16 @@
                 </span>
             </Link>
 
+            <Link :href="route('ventas.index')" class="w-full justify-start"
+                :class="$page.url.startsWith('/ventas') ? 'linkClassActive' : 'linkClass'">
+                <span class="text-left">
+                    <IconItem/>
+                </span>
+                <span class="mx-4 text-xs font-normal">
+                    Ventas / Facturas
+                </span>
+            </Link>
+
             <Link :href="route('informes.index')" class="w-full justify-start"
                 :class="$page.url === '/informes' ? 'linkClassActive' : 'linkClass'">
                 <span class="text-left">
@@ -205,6 +225,16 @@
                 </span>
                 <span class="mx-4 text-xs font-normal">
                     Clientes
+                </span>
+            </Link>
+
+            <Link :href="route('ventas.index')" class="w-full justify-start"
+                :class="$page.url.startsWith('/ventas') ? 'linkClassActive' : 'linkClass'">
+                <span class="text-left">
+                    <IconItem/>
+                </span>
+                <span class="mx-4 text-xs font-normal">
+                    Ventas / Facturas
                 </span>
             </Link>
         </div>
